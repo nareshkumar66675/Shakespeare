@@ -1,4 +1,4 @@
-# To be or not to be
+# To be, or not to be
 
 It is a Data Classifier Project.
 
@@ -13,21 +13,42 @@ It is a Data Classifier Project.
 
 
 # Data Classification
-##### Decision Tree
-- Decision Tree is used to classify the player line and to predict the palyer
+- We are classifying Player Line using 4 different classification models.
+- ##### Models
+        1) Random Forest
+        2) Support Vector Machine
+        3) Naive Byes
+        4) Logistics Regression
+- To classify text, we need to convert into numerical forms. So, the player line has been converted to a **tfidf vector**
+- This vector is then used to train the model.
+# Analysis
+- Data has been split into two sets - Train and Test. Using default methodology.
+- Below graph shows the Play vs No of Players
+![Play vs No of Players](https://raw.githubusercontent.com/nareshkumar66675/Shakespeare/master/reports/PlayVSPlayers.png "Play vs No of Players")
+- ##### Accuracy
+    --Accuracy for each model is evaluated.
+    -- Logistic Regression accuracy rate was higher than the other models.
 
+| Models | Accuracy |
+|------------------------|----------|
+| SVM | 0.043564 |
+| **Logistic Regression** | **0.046845** |
+| Naive Byes | 0.032881 |
+| Random Forest Classifier | 0.021660 |
+
+- Accuracy Comparison of all the models
+- ![Accuracy Comparison](https://raw.githubusercontent.com/nareshkumar66675/Shakespeare/master/reports/ModelComparison.png "Accuracy Comparison")
 
 # Project Struture
 
 ##### Src
-- Wrangler.py - python file exported from Jupyter
+- Shakespeare.py - python file exported from Jupyter
 ##### Notebooks
-- Wrangler.ipynb - Jupyter notebook
+- Shakespeare.ipynb - Jupyter notebook
 ##### Data
-- External - Titanic & Mortality Data
+- External - Shakespeare Data
 ##### Reports
-- Html Table - Merged Final results
-- Plot - Average vs Titanic Mortality
+- Plot - Plays vs Player Count and Accuracy Comparison
 
 
   
